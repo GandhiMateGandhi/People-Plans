@@ -1,0 +1,60 @@
+.toggle {
+  position: relative;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: 0 0;
+  border: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  outline: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.toggle__span {
+  bottom: 7px;
+  width: 70%;
+  height: 2px;
+}
+
+.toggle::before {
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+}
+
+.toggle::after, .toggle::before {
+  content: '';
+  top: 7px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.toggle.active::before {
+  top: 50%;
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.toggle::after .toggle::before {
+  position: absolute;
+  right: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #fff;
+}
+
+.toggle::after .toggle::before .toggle__span {
+  position: absolute;
+  right: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #fff;
+}
+/*# sourceMappingURL=toggle.css.map */

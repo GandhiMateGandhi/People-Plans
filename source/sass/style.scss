@@ -1,5 +1,8 @@
 @import "variables.scss";
+@import "fonts.scss";
+@import "global.scss";
 
-body {
-  background: red;
-}
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/connect.scss";
+@import "blocks/toggle.scss";
