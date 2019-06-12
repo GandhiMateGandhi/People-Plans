@@ -1,0 +1,132 @@
+.services {
+
+  margin-left: 0;
+  @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(2);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include make-col(3);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(3);
+  }
+
+  @include media-breakpoint-up(xl) {
+    @include make-col(4);
+  }
+
+}
+
+.services__list {
+  background: #FBFBFB;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  max-width: 300px;
+  margin-left: 40px;
+
+  .services__tab {
+    a.active {
+      background-color: #252525;
+      color: #FFFFFF;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 0 0 31px;
+      position: relative;
+
+      &::after {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(90deg);
+        background-color: #6D6D6D;
+        content: "";
+        left: 105%;
+        position: absolute;
+        top: -5px;
+        width: 1px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+.services__tab {
+  border: 1px solid #EAEAEA;
+}
+
+.services__tab_high:nth-child(2) a {
+  height: 90px;
+  line-height: 26px;
+  padding: 15px 0 0 31px;
+
+  &.active {
+    height: 90px;
+    line-height: 26px;
+    padding: 15px 0 0 31px;
+  }
+}
+
+.services__tab a {
+  width: 300px;
+  height: 60px;
+  font-size: 19px;
+  line-height: 60px;
+  padding: 0 0 0 31px;
+  color: #1A1A1A;
+}
+
+.services__label {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 180px;
+  left: -33px;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  &::after {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(90deg);
+    background-color: #000000;
+    content: "";
+    left: -35%;
+    position: absolute;
+    top: -7px;
+    width: 1px;
+    height: 25px;
+  }
+}
+
+.services__label_advertising {
+  top: 110px;
+  left: -33px;
+  &::after {
+    left: -35%;
+    position: absolute;
+    top: -7px;
+  }
+}
+
+.services__label_branding {
+  top: 80px;
+  left: -15px;
+  &::after {
+    left: -35%;
+    position: absolute;
+    top: -7px;
+  }
+}
+
+.services__label_management {
+  top: 80px;
+  left: -15px;
+  &::after {
+    left: -35%;
+    position: absolute;
+    top: -7px;
+  }
+}

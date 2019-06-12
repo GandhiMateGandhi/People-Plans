@@ -1,27 +1,30 @@
 .connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0 35px 0 0;
   list-style-type: none;
-  }
+}
 
 .connect__item a:hover {
-    color: #ff4412
+  color: #ff4412;
 }
+
 .connect__item a {
   padding: 10px 15px;
   text-decoration: none;
-  color: #fff;
-  transition: .3s;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
 }
-
 
 .connect__item--mail {
   position: relative;
 }
 
 .connect__item--mail::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -7px;
   right: 0;

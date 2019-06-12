@@ -1,0 +1,23 @@
+.container .services-breadcrumbs {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #6c757d;
+  font-size: 19px;
+  line-height: 30px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.services-breadcrumbs a {
+  color: #000000;
+  text-decoration-color: #6c757d;
+}
+
+.services-breadcrumbs li.active {
+  color: #000000;
+
+  &::before {
+    color: #000000;
+  }
+
+}

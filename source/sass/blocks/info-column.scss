@@ -1,0 +1,21 @@
+.info-column{
+  @include media-breakpoint-up(xl) {
+  min-height: 480px;
+}
+@include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+      @include make-col(6);
+  }
+
+  @include media-breakpoint-up(md) {
+      @include make-col(8);
+  }
+
+  @include media-breakpoint-up(lg) {
+      @include make-col(8);
+  }
+  @include media-breakpoint-up(xl) {
+    @include make-col(8);
+  }
+}
