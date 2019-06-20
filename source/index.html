@@ -7,39 +7,40 @@
   <title>Услуги</title>
   <link rel="stylesheet" href="libs/old/style.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
 </head>
 
 <body>
   <header class="page-header-bg">
     <div class="page-header container">
       <a class="logo" href="/">
-      <img src="img/ppwhite.svg" width="180" height="48" alt="Логотип">
-    </a>
-    <div class="page-header__right-block">
-      <ul class="connect">
-        <li class="connect__item">
-          <a href="tel:+79374709000">+7 (937) 470 09 00</a>
-        </li>
-        <li class="connect__item connect__item--mail">
-          <a href="mailto:info@pplans.ru">info@pplans.ru</a>
-        </li>
-      </ul>
-      <button class="toggle" id="nav-burger">
-        <span class="toggle__span">Переключатель</span>
-      </button>
+        <img src="img/ppwhite.svg" width="180" height="48" alt="Логотип">
+      </a>
+      <div class="page-header__right-block">
+        <ul class="connect">
+          <li class="connect__item">
+            <a href="tel:+79374709000">+7 (937) 470 09 00</a>
+          </li>
+          <li class="connect__item connect__item--mail">
+            <a href="mailto:info@pplans.ru">info@pplans.ru</a>
+          </li>
+        </ul>
+        <button class="toggle" id="nav-burger">
+          <span class="toggle__span">Переключатель</span>
+        </button>
+      </div>
     </div>
-    </div>
-    
+
   </header>
 
   <nav aria-label="breadcrumb">
     <div class="container">
-      <ol class="breadcrumb services-breadcrumbs">
-        <li class="breadcrumb-item"><a href="https://pplans.ru/">Главная</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Услуги</li>
+      <ol class="services-breadcrumbs">
+        <li class="services-breadcrumbs__item"><a href="https://pplans.ru/">Главная</a></li>
+        <li class="services-breadcrumbs__item active" aria-current="page">Услуги</li>
       </ol>
     </div>
   </nav>
@@ -47,7 +48,7 @@
   <section class="development container">
 
     <div class="services-info">
-      <div class="services">
+      <div class="services services_development">
         <p class="services__label">Разработка</p>
         <ul class="nav nav-tabs services__list" id="info" role="tablist">
           <li class="nav-item services__tab">
@@ -200,7 +201,7 @@
   <section class="advertising container">
 
     <div class="services-info">
-      <div class="services">
+      <div class="services services_advertising">
         <p class="services__label services__label_advertising">Продвижение</p>
         <ul class="nav nav-tabs services__list" id="info" role="tablist">
           <li class="nav-item services__tab">
@@ -297,7 +298,7 @@
   <section class="branding container">
 
     <div class="services-info">
-      <div class="services">
+      <div class="services services_branding">
         <p class="services__label services__label_branding">Брендинг</p>
         <ul class="nav nav-tabs services__list" id="info" role="tablist">
           <li class="nav-item services__tab">
@@ -371,7 +372,7 @@
   <section class="management container">
 
     <div class="services-info">
-      <div class="services">
+      <div class="services services_management">
         <p class="services__label services__label_management">Поддержка</p>
         <ul class="nav nav-tabs services__list" id="info" role="tablist">
           <li class="nav-item services__tab">
@@ -547,15 +548,9 @@
     </div>
   </footer>
   <script src="libs/old/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+  <script src="libs/jquery-3.4.1.min.js"></script>
+  <script src="libs/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

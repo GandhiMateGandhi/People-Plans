@@ -3,10 +3,12 @@
 @import "global.scss";
 @import "mixins.scss";
 
-@import "../libs/bootstrap-4.1.3/scss/functions.scss"; 
-@import "../libs/bootstrap-4.1.3/scss/variables.scss"; 
+@import "../libs/bootstrap-4.1.3/scss/functions.scss";
+@import "../libs/bootstrap-4.1.3/scss/variables.scss";
 @import "../libs/bootstrap-4.1.3/scss/mixins";
 @import "../libs/bootstrap-4.1.3/scss/mixins/breakpoints.scss";
+@import "../libs/bootstrap-4.1.3/scss/_breadcrumb.scss";
+@import "../libs/bootstrap-4.1.3/scss/_nav.scss";
 
 
 
@@ -28,4 +30,3 @@
 @import "blocks/info.scss";
 @import "blocks/about-btn.scss";
 @import "blocks/info-column.scss";
-

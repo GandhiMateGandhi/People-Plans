@@ -1,4 +1,4 @@
-.container .services-breadcrumbs {
+.services-breadcrumbs {
   background-color: transparent;
   text-decoration: underline;
   text-decoration-color: #6c757d;
@@ -6,6 +6,12 @@
   line-height: 30px;
   margin-left: 70px;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+  margin-bottom: $breadcrumb-margin-bottom;
+  list-style: none;
+  @include border-radius($breadcrumb-border-radius);
 }
 
 .services-breadcrumbs a {
@@ -20,4 +26,19 @@
     color: #000000;
   }
 
+}
+
+.services-breadcrumbs__item {
+
+  // The separator between breadcrumbs (by default, a forward-slash: "/")
+  +.services-breadcrumbs__item {
+    padding-left: $breadcrumb-item-padding;
+
+    &::before {
+      display: inline-block; // Suppress underlining of the separator in modern browsers
+      padding-right: $breadcrumb-item-padding;
+      color: $breadcrumb-divider-color;
+      content: $breadcrumb-divider;
+    }
+  }
 }

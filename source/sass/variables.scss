@@ -1,27 +1,23 @@
-$grid-columns:      12;
+$grid-columns: 12;
 $grid-gutter-width: 30px;
 
-$grid-breakpoints: (
-  // Extra small screen / phone
+$grid-breakpoints: ( // Extra small screen / phone
   xs: 0,
   // Small screen / phone
   sm: 576px,
   // Medium screen / tablet
   md: 768px,
   // Large screen / desktop
-  lg: 992px,
+  lg: 962px,
   // Extra large screen / wide desktop
-  xl: 1260px
-);
+  xl: 1260px);
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1260px
-);
+$container-max-widths: (sm: 576px,
+  md: 768px,
+  lg: 962px,
+  xl: 1180px);
 
-$container-sm: 540px;
-$container-md: 720px;
+$container-sm: 576px;
+$container-md: 768px;
 $container-lg: 962px;
-$container-xl: 1260px;
+$container-xl: 1180px;
