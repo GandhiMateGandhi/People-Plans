@@ -1,6 +1,14 @@
 .branding {
-  background-image: url(../../img/Branding-title.png);
+  background-image: url(../img/Branding-title.png);
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 65px;
+  background-position-x: 150px;
+  background-position-y: 80px;
+  background-size: 50%;
+
+  @include media-breakpoint-down(xs) {
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 520px;
+  }
 }

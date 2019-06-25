@@ -2,30 +2,32 @@
   margin-left: 0;
   margin-bottom: initial;
   transform: initial;
-  // padding-top: 50px;
+
   @include make-col-ready();
 
   @include media-breakpoint-up(sm) {
-    @include make-col(3);
-  }
-
-  @include media-breakpoint-up(md) {
-    @include make-col(3);
-  }
-
-  @include media-breakpoint-up(lg) {
-    @include make-col(3);
-  }
-
-  @include media-breakpoint-up(xl) {
     @include make-col(4);
   }
 
+  // @include media-breakpoint-up(lg) {
+  //   @include make-col(4);
+  // }
+
+  // @include media-breakpoint-up(xl) {
+  //   @include make-col(4);
+  // }
+
+
 }
+
 
 .services_development {
   display: flex;
   align-items: flex-end;
+
+  @include media-breakpoint-down(md) {
+    align-items: center;
+  }
 }
 
 .services_advertising {
@@ -49,6 +51,10 @@
   border-radius: 5px;
   max-width: 300px;
   margin-left: 40px;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
 }
 
 .services__list {
@@ -60,6 +66,12 @@
       line-height: 65px;
       padding: 0 0 0 31px;
       position: relative;
+
+      @include media-breakpoint-down(md) {
+        font-size: 17px;
+        padding: 0 8px 0 8px;
+        line-height: 45px;
+      }
 
       &::after {
         transform: rotate(90deg);
@@ -99,6 +111,12 @@
   padding: 0 0 0 31px;
   color: #1A1A1A;
   text-decoration: initial;
+
+  @include media-breakpoint-down(md) {
+    font-size: 17px;
+    padding: 0 8px 0 8px;
+    line-height: 45px;
+  }
 }
 
 .services__label {
@@ -110,6 +128,14 @@
   line-height: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  @include media-breakpoint-down(xs) {
+    transform: initial;
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 70px;
+  }
 
   &::after {
     transform: rotate(90deg);
@@ -127,6 +153,14 @@
   top: 215px;
   left: -33px;
 
+  @include media-breakpoint-down(xs) {
+    transform: initial;
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 70px;
+  }
+
   &::after {
     left: -35%;
     position: absolute;
@@ -138,6 +172,14 @@
   top: 210px;
   left: -15px;
 
+  @include media-breakpoint-down(xs) {
+    transform: initial;
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 70px;
+  }
+
   &::after {
     left: -35%;
     position: absolute;
@@ -148,6 +190,14 @@
 .services__label_management {
   top: 195px;
   left: -15px;
+
+  @include media-breakpoint-down(xs) {
+    transform: initial;
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 70px;
+  }
 
   &::after {
     left: -35%;

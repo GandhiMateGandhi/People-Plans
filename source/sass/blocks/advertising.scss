@@ -1,6 +1,12 @@
 .advertising { 
-    background-image: url(../../img/Advertising-title.png);
+    background-image: url(../img/Advertising-title.png);
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 65px;
+    background-position-y: 70px;
+    background-size: 70%;
+    @include media-breakpoint-down(xs) {
+        background-position-x: left;
+        background-position-y: top;
+        background-size: 520px;
+      }
 }

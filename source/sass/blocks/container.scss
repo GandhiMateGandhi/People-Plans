@@ -1,5 +1,4 @@
 .container {
-    min-width: 1260px;
   @include make-container();
 
   @include media-breakpoint-up(sm) {

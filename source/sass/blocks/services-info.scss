@@ -3,11 +3,23 @@
   padding-top: 164px;
   justify-content: center;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-down(xs) {
+    padding-top: 100px;
+  }
+  // @include media-breakpoint-down(sm) {
+  //   justify-content: left;
+  // }
+
+  @include media-breakpoint-down(md) {
     justify-content: left;
   }
 
-  @include media-breakpoint-up(md) {
-    justify-content: left;
-  }
+  // @include media-breakpoint-down(lg) {
+  //   justify-content: center;
+  // }
+
+  // @include media-breakpoint-down(xl) {
+  //   justify-content: center;
+  // }
+
 }

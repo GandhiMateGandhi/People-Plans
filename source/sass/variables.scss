@@ -12,7 +12,8 @@ $grid-breakpoints: ( // Extra small screen / phone
   // Extra large screen / wide desktop
   xl: 1260px);
 
-$container-max-widths: (sm: 576px,
+$container-max-widths: (
+  sm: 576px,
   md: 768px,
   lg: 962px,
   xl: 1180px);

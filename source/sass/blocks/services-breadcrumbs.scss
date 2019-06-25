@@ -12,6 +12,10 @@
   margin-bottom: $breadcrumb-margin-bottom;
   list-style: none;
   @include border-radius($breadcrumb-border-radius);
+  @include media-breakpoint-up(xs) {
+    padding: 0;
+    margin-left: 20px;
+  }
 }
 
 .services-breadcrumbs a {
