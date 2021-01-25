@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+  z-index: 999;
+  max-width: 180px;
+  max-height: 48px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=logo.css.map */

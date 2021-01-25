@@ -1,22 +1,46 @@
 .info-column {
-  
-  @include make-col-ready();
 
+  @include make-col-ready();
+  
+  @include media-breakpoint-down(xs) {
+    padding-right: 0;
+  }
   @include media-breakpoint-up(sm) {
     @include make-col(8);
   }
 
-  @include media-breakpoint-up(md) {
-    @include make-col(8);
-  }
+  // @include media-breakpoint-up(md) {
+  //   @include make-col(8);
+  // }
 
   @include media-breakpoint-up(lg) {
     @include make-col(8);
     min-height: 440px;
     max-width: 780px;
+    
   }
+}
 
-  // @include media-breakpoint-up(xl) {
-  //   @include make-col(8);
-  // }
+.owl-item .info {
+  transform: scale(0.95);
+  transition: 0.45s;
+}
+
+.owl-item.active {
+  +.owl-item.active .info {
+    transform: scale(0.95);
+  }
+}
+
+.owl-item.active .info {
+  transform: scale(1);
+}
+
+.owl-theme .owl-dots {
+  .owl-dot span {
+    background: transparent;
+    border: 1px solid #C4C4C4;
+    width: 9px;
+    height: 9px;
+  }
 }

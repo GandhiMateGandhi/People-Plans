@@ -150,7 +150,7 @@ body {
 @media (max-width: 575.98px) {
     .development {
         background-position-x: left;
-        background-position-y: top;
+        background-position-y: 20px;
         background-size: 520px;
     }
 }
@@ -203,7 +203,7 @@ body {
 }
 
 .page-header-bg {
-    background-image: url(../../img/header-bg.png);
+    background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -342,8 +342,12 @@ body {
     margin-bottom: 1rem;
     list-style: none;
     border-radius: 0.25rem;
-    padding: 0;
-    margin-left: 20px;
+}
+@media (max-width: 575.98px) {
+    .services-breadcrumbs {
+        padding: 0;
+        margin-left: auto;
+    }
 }
 
 .services-breadcrumbs a {
@@ -397,6 +401,13 @@ body {
     }
 }
 
+@media (max-width: 575.98px) {
+    section .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 .services-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -413,6 +424,9 @@ body {
 @media (max-width: 575.98px) {
     .services-info {
         padding-top: 100px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 @media (max-width: 961.98px) {
@@ -496,6 +510,11 @@ body {
 }
 @media (max-width: 767.98px) {
     .services__list {
+        margin-left: 0;
+    }
+}
+@media (max-width: 575.98px) {
+    .services__list {
         display: none;
     }
 }
@@ -511,7 +530,21 @@ body {
     .services__list .services__tab a.active {
         font-size: 17px;
         padding: 0 8px 0 8px;
-        line-height: 45px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 767.98px) {
+    .services__list .services__tab a.active {
+        font-size: 16px;
+        padding: 0 8px 0 8px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 575.98px) {
+    .services__list .services__tab a.active {
+        font-size: 16px;
+        padding: 0 8px 0 8px;
+        line-height: 35px;
     }
 }
 .services__list .services__tab a.active::after {
@@ -553,7 +586,21 @@ body {
     .services__tab a {
         font-size: 17px;
         padding: 0 8px 0 8px;
-        line-height: 45px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 767.98px) {
+    .services__tab a {
+        font-size: 16px;
+        padding: 0 8px 0 8px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 575.98px) {
+    .services__tab a {
+        font-size: 16px;
+        padding: 0 8px 0 8px;
+        line-height: 35px;
     }
 }
 
@@ -656,19 +703,23 @@ body {
     border-radius: 5px;
     color: #ffffff;
     background-size: cover;
-    height: 100%;
     -webkit-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.12);
             box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.12);
+    height: 100%;
 }
 @media (max-width: 767.98px) {
     .info {
-        margin-left: 20px;
         background-position-x: center;
         -webkit-box-shadow: initial;
                 box-shadow: initial;
     }
-    .info:nth-child(n+2) {
-        height: 300px;
+}
+@media (max-width: 575.98px) {
+    .info {
+        background: -webkit-gradient(linear, left top, right top, from(#252525), to(rgba(37, 37, 37, 0.35))), url(../img/services-bg-mobile.jpg);
+        background: linear-gradient(90deg, #252525 0%, rgba(37, 37, 37, 0.35) 100%), url(../img/services-bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -686,14 +737,14 @@ body {
     height: 100%;
     padding: 122px 0 40px 60px;
 }
-@media (max-width: 767.98px) {
-    .info__service {
-        padding: 42px 0px 40px 15px;
-    }
-}
 @media (max-width: 961.98px) {
     .info__service {
         padding: 50px 0 40px 30px;
+    }
+}
+@media (max-width: 767.98px) {
+    .info__service {
+        padding: 42px 0px 40px 15px;
     }
 }
 
@@ -710,7 +761,7 @@ body {
     font-size: 19px;
     line-height: 23px;
     padding-left: 4px;
-    max-width: 102px;
+    max-width: 100px;
     padding-top: 8px;
 }
 
@@ -729,30 +780,25 @@ body {
 .info__price {
     font-size: 19px;
     line-height: 23px;
+    padding-left: 4px;
+    max-height: 21px;
+    max-width: 100px;
+}
+
+.info__price p {
+    display: inline-block;
+    position: relative;
+}
+.info__price p::after {
     background-image: url(../img/ruble.png);
     background-repeat: no-repeat;
-    background-position: right;
-    padding-left: 4px;
-    max-width: 102px;
-    max-height: 21px;
-}
-
-.info__price_management {
-    background-position: 87px 12px;
-    background-position: right;
-    max-width: 90px;
-}
-
-.info__price_ad {
-    background-position: 88px 11px;
-    background-position: right;
-    max-width: 90px;
-}
-
-.info__price_smm {
-    background-position: 88px 11px;
-    background-position: right;
-    max-width: 90px;
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: 4px;
+    display: block;
+    height: 15px;
+    width: 15px;
 }
 
 .about-btn {
@@ -776,15 +822,12 @@ body {
     padding-right: 15px;
     padding-left: 15px;
 }
-@media (min-width: 576px) {
+@media (max-width: 575.98px) {
     .info-column {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.66667%;
-            flex: 0 0 66.66667%;
-        max-width: 66.66667%;
+        padding-right: 0;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .info-column {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 66.66667%;
@@ -803,8 +846,37 @@ body {
     }
 }
 
-.owl-carousel.off {
-    display: block;
+.owl-item .info {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-transition: 0.45s;
+            transition: 0.45s;
+}
+
+.owl-item.active + .owl-item.active .info {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+}
+
+.owl-item.active .info {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: transparent;
+    border: 1px solid #c4c4c4;
+    width: 9px;
+    height: 9px;
+}
+
+.tab-content .tab-pane {
+    -webkit-transition: 0.7s;
+            transition: 0.7s;
+    -webkit-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+    -webkit-transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+            transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
 /*# sourceMappingURL=style.css.map */

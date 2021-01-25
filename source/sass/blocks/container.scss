@@ -17,3 +17,10 @@
       max-width: $container-xl;
   }
 }
+
+@include media-breakpoint-down(xs) {
+   section .container  {
+        padding-right: 0;
+        padding-left: 0;
+    }
+  }

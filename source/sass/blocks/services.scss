@@ -53,9 +53,17 @@
   margin-left: 40px;
 
   @include media-breakpoint-down(sm) {
+    margin-left: 0;
+  }
+  @include media-breakpoint-down(xs) {
     display: none;
   }
+
 }
+
+// .services__list_off {
+//   display: none;
+// }
 
 .services__list {
   .services__tab {
@@ -70,7 +78,19 @@
       @include media-breakpoint-down(md) {
         font-size: 17px;
         padding: 0 8px 0 8px;
-        line-height: 45px;
+        line-height: 40px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        padding: 0 8px 0 8px;
+        line-height: 35px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 16px;
+        padding: 0 8px 0 8px;
+        line-height: 35px;
       }
 
       &::after {
@@ -112,11 +132,26 @@
   color: #1A1A1A;
   text-decoration: initial;
 
+
   @include media-breakpoint-down(md) {
     font-size: 17px;
     padding: 0 8px 0 8px;
-    line-height: 45px;
+    line-height: 40px;
   }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+    padding: 0 8px 0 8px;
+    line-height: 35px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+    padding: 0 8px 0 8px;
+    line-height: 35px;
+  }
+
+
 }
 
 .services__label {

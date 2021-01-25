@@ -8781,21 +8781,21 @@ $(this).hide();
   scroll(nav);
 })();
 
-(function () {
-  var navBurger = document.querySelector('#nav-burger');
-  var nav = document.querySelector('#nav');
+// (function () {
+//   var navBurger = document.querySelector('#nav-burger');
+//   var nav = document.querySelector('#nav');
 
-  navBurger.addEventListener('click', function () {
-    navBurger.classList.toggle('active');
-    nav.classList.toggle('menu-navigation--active');
+//   navBurger.addEventListener('click', function () {
+//     navBurger.classList.toggle('active');
+//     nav.classList.toggle('menu-navigation--active');
 
-    if (navBurger.classList.contains('active')) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  });
-})();
+//     if (navBurger.classList.contains('active')) {
+//       document.body.style.overflow = 'hidden';
+//     } else {
+//       document.body.style.overflow = 'auto';
+//     }
+//   });
+// })();
 
 (function () {
   var maychange = document.querySelectorAll('input[data-checkbox="may-change"]');
